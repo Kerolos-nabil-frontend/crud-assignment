@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<main class="first vh-100">
+    <div class="container py-3 ">
+
+        <div class="title">
+            <h1 class="text-center py-5">Bookmark</h1>
+        </div>
+        
+
+        <div class="body">
+            <h2 class="pt-4 text-center"><i class="fa-solid fa-bookmark"></i>  Bookmark your favorite sites  <i class="fa-solid fa-bookmark"></i></h2>
+            <div class="d-flex justify-content-center flex-column w-100">
+               <label for="Bookmarkname" class="pb-3 pt-3">
+                <i class="fa-solid fa-bookmark"></i>   Site Name
+               </label>
+                
+               <input id="bookmarkName" type="text" class="form-control" placeholder="Bookmark Name">
+              </div>
+            <div class="d-flex justify-content-center flex-column w-100">
+               <label for="Bookmark-name" class="pb-3 pt-3">
+                <i class="fa-solid fa-link"></i>   Site URL
+               </label>
+                
+               <input id="bookmarkLink" type="text" class="form-control" placeholder="Website URL">
+              </div>
+              
+              
+              <button onclick="addLink()" class="btn btn-light mt-3 mb-3" id="addBtn">Submit</button>
+        </div>
+
+            <table class="table text-center mt-5">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                  <tbody id="content">
+                   
+                  </tbody>
+            
+            </table>
+
+    </div>
+</main>
+
+
+    <script src="index.js" ></script>
+</body>
+</html>
